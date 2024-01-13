@@ -3,9 +3,9 @@ game boy frame boy
 
 <p>
   <center>
-    <img src="https://github.com/FlashlightET/gb-kemono-friends-fmv/assets/29938499/37843881-2a4c-4066-a033-ccc7fea9fccd" width="300" />
-    <img src="https://github.com/FlashlightET/gb-kemono-friends-fmv/assets/29938499/8d006a00-d5e2-4fa5-9b90-d7c9a46b78b4" width="300" /> 
-    <img src="https://github.com/FlashlightET/gb-kemono-friends-fmv/assets/29938499/9e3b2832-422f-48c4-921d-350deec09eda" width="300" />
+    <img src="https://github.com/FlashlightET/gb-kemono-friends-fmv/assets/29938499/37843881-2a4c-4066-a033-ccc7fea9fccd" width="270" />
+    <img src="https://github.com/FlashlightET/gb-kemono-friends-fmv/assets/29938499/8d006a00-d5e2-4fa5-9b90-d7c9a46b78b4" width="270" /> 
+    <img src="https://github.com/FlashlightET/gb-kemono-friends-fmv/assets/29938499/9e3b2832-422f-48c4-921d-350deec09eda" width="270" />
   </center>
 </p>
 thing i pumped out lol
