@@ -187,18 +187,15 @@ while True:
     #mem('FF26',binary('10001111')) #the 1111 are read only but im writing em anyways
     pitch=pitch%2048
     lastcmd=cmd
-    if cycle>210:
-        #vgm playback code
-        cmd=vgmdata[vgm_i][12:14]
-        #print(cmd)
-        #if cmd=='62': vgm_i+=1
-        while cmd!='62' and cmd!='63':
-            
-            cmd=vgmdata[vgm_i][12:14]
-            reg=vgmdata[vgm_i][15:17]
-            val=vgmdata[vgm_i][18:20]
-            #print(vgmdata[vgm_i])
-            #print(f'{cmd}, {reg}, {val}')
+    
+    if cycle>40:
+        for songrow in songframes[song_i]:
+            #print(songrow)
+                
+            cmd=songrow[12:14]
+            reg=songrow[15:17]
+            val=songrow[18:20]
+
             if reg=='06': #CH 2 Duty, Length
                 mem('FF16',int(val,base=16))
             if reg=='07': #CH 2 Envelope
@@ -259,10 +256,7 @@ while True:
                 mem('FF25',int(val,base=16))
             if reg=='16': #Sound Off/On
                 mem('FF26',int(val,base=16))
-            vgm_i+=1
-
-        #if cmd=='62': vgm_i+=1
-        if cmd=='62' and lastcmd==cmd: vgm_i+=1
+        song_i+=1
     
     #end vgm playback code
     
